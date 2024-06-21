@@ -9,7 +9,7 @@ describe("post a tweet", () => {
 	beforeEach(() => {
 		//access fixture data
 
-		cy.log("Running login process");
+		cy.log("Running login process now");
 
 		cy.visit("https://x.com/i/flow/login");
 
