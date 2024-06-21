@@ -24,27 +24,39 @@ describe.skip("post a tweet", () => {
 	});
 
 	it.skip("Post Image on Twitter", () => {
-		cy.url().should("eq", "https://x.com/home");
+		cy.visit("https://x.com/home"); // Ensure starting from the correct URL
 
 		cy.log("Starting Image Posting Process");
-		//getting some images  from : https://www.pinkvilla.com/lifestyle/relationships/black-love-quotes-1218213
-
-		cy.fixture("tweetImages.json").then((tweetImage) => {
-			if (tweetImage.length === 0) {
+	
+		// Load images from fixture file
+		cy.fixture("tweetImages.json").then((tweetImages) => {
+			if (tweetImages.length === 0) {
 				cy.log("No Images to process");
 				return;
 			}
+	
+			// Get the first image to process
+			const imageToProcess = tweetImages[0];
 
-			// Get the first Image to process
-			const imageToProcess = tweetImage[0];
 
-			// Select the first image to attach
-			hPageObj.uploadImageWhatIsHappening(imageToProcess.image); // Requires `cypress-file-upload` plugin
 
-			// Example assertion or logging after attaching the image
+			//textfield obj
+		const xWhatIsHappeningTextField =  cy.get("[class='DraftEditor-root']");
+		xWhatIsHappeningTextField.click();
+		xWhatIsHappeningTextField.type('hi')
+
+	
+			// Assuming `uploadImageWhatIsHappening` is a function to upload images
+			// Example usage (requires cypress-file-upload plugin):
+			// hPageObj.xWhatIsHappeningTextField(imageToProcess.image, {
+			// 	subjectType: "drag-n-drop",
+			// });
+		
+	
+			// Logging the attached image (adjust as per your needs)
 			cy.log(`Attached image: ${imageToProcess.image}`);
 
-			cy.log("No images to attach");
+			cy.wait(50000)
 		});
 	});
 

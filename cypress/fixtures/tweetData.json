@@ -1,149 +1,230 @@
 [
-	{
-		"message": "'The better I get to know men, the more I find myself loving dogs.' Charles de Gaulle"
-	},
-	{
-		"message": "'Why did the dog sit in the shade? Because he didn't want to be a hot dog!'"
-	},
-	{
-		"message": "'Dogs do speak, but only to those who know how to listen.' Orhan Pamuk"
-	},
-	{
-		"message": "'If your dog is fat, you aren’t getting enough exercise.'"
-	},
-	{
-		"message": "'Every dog has his day, unless he loses his tail, then he has a weak-end.'"
-	},
-	{
-		"message": "'The only creatures that are evolved enough to convey pure love are dogs and infants.' Johnny Depp"
-	},
-	{
-		"message": "'My dog is half Pitbull, half Poodle. Not much of a guard dog, but a vicious gossip.'"
-	},
-	{
-		"message": "'I think dogs are the most amazing creatures; they give unconditional love. For me, they are the role model for being alive.' Gilda Radner"
-	},
-	{
-		"message": "'I named my dog “Five Miles” so I can tell people I walk Five Miles every day.'"
-	},
-	{
-		"message": "'Dogs never bite me. Just humans.' Marilyn Monroe"
-	},
-	{
-		"message": "'Why don’t blind people skydive? Because it scares the dog.'"
-	},
-	{
-		"message": "'A dog is the only thing on earth that loves you more than he loves himself.' Josh Billings"
-	},
-	{
-		"message": "'I wonder if other dogs think poodles are members of a weird religious cult.' Rita Rudner"
-	},
-	{
-		"message": "'Dogs are not our whole life, but they make our lives whole.' Roger Caras"
-	},
-	{
-		"message": "'Why did the dog go to the doctor? Because he had a ruff day!'"
-	},
-	{
-		"message": "'The more I see of men, the more I like dogs.' Madame de Staël"
-	},
-	{
-		"message": "'When a man’s best friend is his dog, that dog has a problem.' Edward Abbey"
-	},
-	{
-		"message": "'The bond with a true dog is as lasting as the ties of this earth will ever be.' Konrad Lorenz"
-	},
-	{
-		"message": "'What do you get if you cross a gold dog with a telephone? A golden receiver!'"
-	},
-	{
-		"message": "'Happiness is a warm puppy.' Charles M. Schulz"
-	},
-	{
-		"message": "'What do you call a dog magician? A labracadabrador!'"
-	},
-	{
-		"message": "'Dogs’ lives are too short. Their only fault, really.' Agnes Sligh Turnbull"
-	},
-	{
-		"message": "'Dogs have boundless enthusiasm but no sense of shame. I should have a dog as a life coach.' Moby"
-	},
-	{
-		"message": "'What did the dog say to the tree? Bark.'"
-	},
-	{
-		"message": "'The dog is a gentleman; I hope to go to his heaven, not man’s.' Mark Twain"
-	},
-	{
-		"message": "'What’s a dog’s favorite city? New Yorkie!'"
-	},
-	{
-		"message": "'Dogs are not our whole life, but they make our lives whole.' Roger Caras"
-	},
-	{
-		"message": "'My dog thinks he's a genius. He's convinced that if he stares at the refrigerator long enough, the door will open.'"
-	},
-	{
-		"message": "'Dogs come when they’re called; cats take a message and get back to you later.' Mary Bly"
-	},
-	{
-		"message": "'What kind of dog does Dracula have? A bloodhound!'"
-	},
-	{
-		"message": "'Dogs laugh, but they laugh with their tails.' Max Eastman"
-	},
-	{
-		"message": "'To err is human—to forgive, canine.'"
-	},
-	{
-		"message": "'Dogs leave paw prints on your heart.'"
-	},
-	{
-		"message": "'Why did the dog cross the road? To get to the barking lot!'"
-	},
-	{
-		"message": "'The greatest fear dogs know is the fear that you will not come back when you go out the door without them.' Stanley Coren"
-	},
-	{
-		"message": "'Why was the dog a great musician? Because he had perfect pitch!'"
-	},
-	{
-		"message": "'Money can buy you a fine dog, but only love can make him wag his tail.' Kinky Friedman"
-	},
-	{
-		"message": "'Why did the scarecrow become a successful neurosurgeon? Because he was outstanding in his field. Wait, wrong joke... Because he had the brains for it!'"
-	},
-	{
-		"message": "'The world would be a nicer place if everyone had the ability to love as unconditionally as a dog.' M.K. Clinton"
-	},
-	{
-		"message": "'What kind of dog does a vampire prefer? A bloodhound!'"
-	},
-	{
-		"message": "'Dogs are better than human beings because they know but do not tell.' Emily Dickinson"
-	},
-	{
-		"message": "'What do you get if you cross a dog with a computer? A lot of bites!'"
-	},
-	{
-		"message": "'If there are no dogs in Heaven, then when I die I want to go where they went.' Will Rogers"
-	},
-	{
-		"message": "'Why did the dog join the orchestra? Because he had the best bark-tone!'"
-	},
-	{
-		"message": "'Some of my best leading men have been dogs and horses.' Elizabeth Taylor"
-	},
-	{
-		"message": "'What do you call a cold dog? A chili dog!'"
-	},
-	{
-		"message": "'When you feel lousy, puppy therapy is indicated.' Sara Paretsky"
-	},
-	{
-		"message": "'Why don’t dogs make good dancers? Because they have two left feet!'"
-	},
-	{
-		"message": "'Dogs are how people would be if the important stuff is all that mattered to us.' Ashly Lorenzana"
-	}
+  {
+    "message": "Dogs are like potato chips. You can't have just one."
+  },
+  {
+    "message": "The better I get to know men, the more I find myself loving dogs. - Charles de Gaulle"
+  },
+  {
+    "message": "Money can buy you a fine dog, but only love can make him wag his tail. - Kinky Friedman"
+  },
+  {
+    "message": "A dog teaches a boy fidelity, perseverance, and to turn around three times before lying down. - Robert Benchley"
+  },
+  {
+    "message": "My dog is not spoiled. I’m just well trained."
+  },
+  {
+    "message": "Happiness is a warm puppy. - Charles M. Schulz"
+  },
+  {
+    "message": "Some of my best leading men have been dogs and horses. - Elizabeth Taylor"
+  },
+  {
+    "message": "The more people I meet, the more I like my dog."
+  },
+  {
+    "message": "To err is human — to forgive, canine. - Unknown"
+  },
+  {
+    "message": "Dogs have a way of finding the people who need them and filling an emptiness we didn’t ever know we had. - Thom Jones"
+  },
+  {
+    "message": "My fashion philosophy is, if you're not covered in dog hair, your life is empty."
+  },
+  {
+    "message": "When you have a dog, you never walk alone. - Unknown"
+  },
+  {
+    "message": "If aliens saw us walking our dogs and picking up their poop, who would they think is in charge? - Unknown"
+  },
+  {
+    "message": "Dogs do speak, but only to those who know how to listen. - Orhan Pamuk"
+  },
+  {
+    "message": "Life is too short to just have one dog."
+  },
+  {
+    "message": "A house is not a home without a dog. - Unknown"
+  },
+  {
+    "message": "The average dog is a nicer person than the average person. - Andy Rooney"
+  },
+  {
+    "message": "The world would be a nicer place if everyone had the ability to love as unconditionally as a dog. - M.K. Clinton"
+  },
+  {
+    "message": "My windows aren’t dirty. That’s my dog’s nose art."
+  },
+  {
+    "message": "A dog will teach you unconditional love. If you can have that in your life, things won’t be too bad. - Robert Wagner"
+  },
+  {
+    "message": "The road to my heart is paved with paw prints."
+  },
+  {
+    "message": "The only thing better than a dog is a dog with a slice of pizza."
+  },
+  {
+    "message": "Love is a four-legged word. - Unknown"
+  },
+  {
+    "message": "I wonder if other dogs think poodles are members of a weird religious cult. - Rita Rudner"
+  },
+  {
+    "message": "Dogs’ lives are too short. Their only fault, really. - Agnes Sligh Turnbull"
+  },
+  {
+    "message": "If there are no dogs in Heaven, then when I die I want to go where they went. - Will Rogers"
+  },
+  {
+    "message": "A dog is one of the few things in life that is exactly what it seems. - Unknown"
+  },
+  {
+    "message": "My goal in life is to be as good of a person my dog already thinks I am."
+  },
+  {
+    "message": "No one appreciates the very special genius of your conversation as the dog does. - Christopher Morley"
+  },
+  {
+    "message": "In a perfect world, every dog would have a home and every home would have a dog. - Unknown"
+  },
+  {
+    "message": "The more boys I meet, the more I love my dog. - Carrie Underwood"
+  },
+  {
+    "message": "Dogs are our link to paradise. They don't know evil or jealousy or discontent. - Milan Kundera"
+  },
+  {
+    "message": "Every dog has his day, unless he loses his tail, then he has a weak-end. - June Carter Cash"
+  },
+  {
+    "message": "My little dog—a heartbeat at my feet. - Edith Wharton"
+  },
+  {
+    "message": "Dogs laugh, but they laugh with their tails. - Max Eastman"
+  },
+  {
+    "message": "You can usually tell that a man is good if he has a dog who loves him. - W. Bruce Cameron"
+  },
+  {
+    "message": "The better I get to know men, the more I find myself loving dogs. - Charles de Gaulle"
+  },
+  {
+    "message": "Some days you're the dog, some days you're the hydrant. - Unknown"
+  },
+  {
+    "message": "Dogs leave paw prints on our hearts. - Unknown"
+  },
+  {
+    "message": "What do dogs do on their day off? Can’t lie around – that’s their job! - George Carlin"
+  },
+  {
+    "message": "Dogs are how people would be if the important stuff is all that mattered to us. - Ashly Lorenzana"
+  },
+  {
+    "message": "I think dogs are the most amazing creatures; they give unconditional love. For me, they are the role model for being alive. - Gilda Radner"
+  },
+  {
+    "message": "Dogs are like chocolates. You can't just have one."
+  },
+  {
+    "message": "To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring – it was peace. - Milan Kundera"
+  },
+  {
+    "message": "Dogs are miracles with paws. - Susan Ariel Rainbow Kennedy"
+  },
+  {
+    "message": "I wonder if my dog dreams of me."
+  },
+  {
+    "message": "Dogs don’t rationalize. They don’t hold anything against a person. They don’t see the outside of a human but the inside of a human. - Cesar Millan"
+  },
+  {
+    "message": "Handle every situation like a dog. If you can’t eat it or play with it, just pee on it and walk away."
+  },
+  {
+    "message": "A dog is the only thing that can mend a crack in your broken heart. - Judy Desmond"
+  },
+  {
+    "message": "If I could be half the person my dog is, I’d be twice the human I am."
+  },
+  {
+    "message": "Dogs have boundless enthusiasm but no sense of shame. I should have a dog as a life coach. - Moby"
+  },
+  {
+    "message": "Dogs are proof that the best things in life are free."
+  },
+  {
+    "message": "The bond with a true dog is as lasting as the ties of this earth will ever be. - Konrad Lorenz"
+  },
+  {
+    "message": "I work hard so my dog can have a better life."
+  },
+  {
+    "message": "My sunshine doesn’t come from the skies. It comes from the love that’s in my dog’s eyes. - Unknown"
+  },
+  {
+    "message": "A dog can express more with his tail in minutes than an owner can express with his tongue in hours. - Unknown"
+  },
+  {
+    "message": "Life is ruff when you're a dog, but at least you're not a cat."
+  },
+  {
+    "message": "Dogs’ lives are too short. Their only fault, really. - Agnes Sligh Turnbull"
+  },
+  {
+    "message": "The greatness of a nation and its moral progress can be judged by the way its animals are treated. - Mahatma Gandhi"
+  },
+  {
+    "message": "Live like someone left the gate open."
+  },
+  {
+    "message": "Dogs are not our whole life, but they make our lives whole. - Roger Caras"
+  },
+  {
+    "message": "The dog lives for the day, the hour, even the moment. - Robert Falcon Scott"
+  },
+  {
+    "message": "A dog is the only thing on earth that loves you more than he loves himself. - Josh Billings"
+  },
+  {
+    "message": "Dogs don’t know about beginnings, and they don’t speculate on matters that occurred before their time. Dogs also don’t know—or at least don’t accept—the concept of death. With no concept of beginnings or endings, dogs probably just exist in an eternal now. - Stanley Coren"
+  },
+  {
+    "message": "If my dog makes you uncomfortable, I’d be happy to lock you in the other room."
+  },
+  {
+    "message": "The more I see of men, the more I admire dogs. - Jeanne-Marie Roland"
+  },
+  {
+    "message": "Dogs’ lives are too short. Their only fault, really. - Agnes Sligh Turnbull"
+  },
+  {
+    "message": "If I had a dollar for every time my dog made me smile, I’d be a millionaire."
+  },
+  {
+    "message": "A dog is the only thing on earth that loves you more than he loves himself. - Josh Billings"
+  },
+  {
+    "message": "Dogs are not our whole life, but they make our lives whole. - Roger Caras"
+  },
+  {
+    "message": "A dog can snap you out of any kind of bad mood that you’re in faster than you can think of. - Jill Abramson"
+  },
+  {
+    "message": "If you want the best seat in the house, move the dog."
+  },
+  {
+    "message": "I think dogs are the most amazing creatures; they give unconditional love. For me, they are the role model for being alive. - Gilda Radner"
+  },
+  {
+    "message": "The only creatures that are evolved enough to convey pure love are dogs and infants. - Johnny Depp"
+  },
+  {
+    "message": "You can usually tell that a man is good if he has a dog who loves him. - W. Bruce Cameron"
+  },
+  {
+    "message": "Dogs are our link to paradise. They don't know evil or jealousy or discontent. - Milan Kundera"
+  }
 ]

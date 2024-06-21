@@ -3,7 +3,6 @@ class homePage {
 		whatIsHappeningText: () => cy.xpath("//*[text()='What is happening?!']"),
 		whatIsHappeningTextField: () => cy.get("[class='DraftEditor-root']"),
 		buttonImageUpload: () => cy.get("button[aria-label='Add photos or video']"),
-
 		postTweetButton: () => cy.xpath("//*[@data-testid='tweetButtonInline']"),
 	};
 	checkWhatIsHappeningTextExist() {
@@ -19,7 +18,6 @@ class homePage {
 	}
 
 	uploadImageWhatIsHappening(image) {
-		
 		return this.elements.buttonImageUpload().attachFile(image);
 	}
 
