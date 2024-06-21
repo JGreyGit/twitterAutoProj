@@ -1,8 +1,8 @@
 [
 	{
-		"image": "/Users/jgrey/Nerd/CypressProjects/twitterProj/cypress/fixtures/images/weirdlilguyss_dog_looking.jpeg"
+		"image": "images/weirdlilguyss_dog_looking.png"
 	},
 	{
-		"image": "/Users/jgrey/Nerd/CypressProjects/twitterProj/cypress/fixtures/images/weirdlilguyss_dog_pee_pool.jpeg"
+		"image": "images/weirdlilguyss_dog_pee_pool.png"
 	}
 ]

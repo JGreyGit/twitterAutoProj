@@ -27,60 +27,58 @@ describe.skip("post a tweet", () => {
 		cy.visit("https://x.com/home"); // Ensure starting from the correct URL
 
 		cy.log("Starting Image Posting Process");
-	
+
 		// Load images from fixture file
 		cy.fixture("tweetImages.json").then((tweetImages) => {
 			if (tweetImages.length === 0) {
 				cy.log("No Images to process");
 				return;
 			}
-	
+
 			// Get the first image to process
 			const imageToProcess = tweetImages[0];
+			const imagePath = `${imageToProcess.image}`; // Construct full path to image
 
+			cy.log(`URL from file: ${imagePath.toString()}`);
 
+			cy.wait(20000);
 
-			//textfield obj
-		const xWhatIsHappeningTextField =  cy.get("[class='DraftEditor-root']");
-		xWhatIsHappeningTextField.click();
-		xWhatIsHappeningTextField.type('hi')
+			// Click on the text field to activate it (assuming it's an area that accepts drops)
+			cy.get("[class='DraftEditor-root']").click();
 
-	
-			// Assuming `uploadImageWhatIsHappening` is a function to upload images
-			// Example usage (requires cypress-file-upload plugin):
-			// hPageObj.xWhatIsHappeningTextField(imageToProcess.image, {
-			// 	subjectType: "drag-n-drop",
-			// });
-		
-	
+			// Simulate file input change event with the image file
+			cy.get("[class='DraftEditor-root']").attachFile(imagePath, {
+				subjectType: "drag-n-drop",
+			});
+
 			// Logging the attached image (adjust as per your needs)
 			cy.log(`Attached image: ${imageToProcess.image}`);
+			//upload images
 
-			cy.wait(50000)
+			hPageObj.clickPostButton();
 		});
+		//upload images
+
+		// hPageObj.clickPostButton();
+
+		// //once message has posted , move the message to a file called 'postedMessages'
+
+		// cy.log(`Posted message: ${messageToProcess.message}`);
+
+		// // Read the postedMessages fixture to append the processed message
+		// cy.readFile("cypress/fixtures/postedMessages.json").then((postedMessages) => {
+		// 	if (!Array.isArray(postedMessages)) {
+		// 	  postedMessages = [];
+		// 	}
+
+		// 	postedMessages.push(messageToProcess);
+
+		// 	cy.writeFile("cypress/fixtures/postedMessages.json", postedMessages);
+		//   });
+
+		//   // Update 'tweetData'
+		//   const updatedTweetData = tweetData.slice(1); // Remove the first item
+
+		//   cy.writeFile("cypress/fixtures/tweetData.json", updatedTweetData);
 	});
-
-	//upload images
-
-	// hPageObj.clickPostButton();
-
-	// //once message has posted , move the message to a file called 'postedMessages'
-
-	// cy.log(`Posted message: ${messageToProcess.message}`);
-
-	// // Read the postedMessages fixture to append the processed message
-	// cy.readFile("cypress/fixtures/postedMessages.json").then((postedMessages) => {
-	// 	if (!Array.isArray(postedMessages)) {
-	// 	  postedMessages = [];
-	// 	}
-
-	// 	postedMessages.push(messageToProcess);
-
-	// 	cy.writeFile("cypress/fixtures/postedMessages.json", postedMessages);
-	//   });
-
-	//   // Update 'tweetData'
-	//   const updatedTweetData = tweetData.slice(1); // Remove the first item
-
-	//   cy.writeFile("cypress/fixtures/tweetData.json", updatedTweetData);
 });
