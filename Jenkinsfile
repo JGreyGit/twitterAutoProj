@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Define environment variables if needed
         WORKSPACE = pwd() // Set WORKSPACE to current directory
         CYPRESS_CACHE_FOLDER = "${HOME}/.cache/Cypress"
         CYPRESS_BINARY_FOLDER = "${HOME}/bin/Cypress"
@@ -15,9 +14,9 @@ pipeline {
                 checkout scm
             }
         }
+
         stage('Install Dependencies') {
             steps {
-                // Install Node.js and Cypress dependencies
                 script {
                     def NODEJS_HOME = tool name: 'NodeJS', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
                     env.PATH = "${NODEJS_HOME}/bin:${env.PATH}"
@@ -37,4 +36,27 @@ pipeline {
 
         stage('Archive Artifacts') {
             steps {
-                // Archive Cypress reports and other artifac
+                // Archive Cypress reports and other artifacts
+                archiveArtifacts artifacts: 'cypress/results/junit/**/*.xml'
+                archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
+                // Optionally archive screenshots or videos if generated
+                archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
+                // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
+            }
+        }
+
+        stage('Record Test Results') {
+            steps {
+                // Record JUnit test results for Jenkins to display
+                junit 'cypress/results/junit/**/*.xml'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up steps if needed
+            deleteDir()
+        }
+    }
+}
