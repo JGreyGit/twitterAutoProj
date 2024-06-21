@@ -42,29 +42,29 @@ describe("post a tweet", () => {
 
 			//upload images
 
-			// hPageObj.clickPostButton();
+			hPageObj.clickPostButton();
 
-			// // //once message has posted , move the message to a file called 'postedMessages'
+			// //once message has posted , move the message to a file called 'postedMessages'
 
-			// cy.log(`Posted message: ${messageToProcess.message}`);
+			cy.log(`Posted message: ${messageToProcess.message}`);
 
-			// // Read the postedMessages fixture to append the processed message
-			// cy.readFile("cypress/fixtures/postedMessages.json").then(
-			// 	(postedMessages) => {
-			// 		if (!Array.isArray(postedMessages)) {
-			// 			postedMessages = [];
-			// 		}
+			// Read the postedMessages fixture to append the processed message
+			cy.readFile("cypress/fixtures/postedMessages.json").then(
+				(postedMessages) => {
+					if (!Array.isArray(postedMessages)) {
+						postedMessages = [];
+					}
 
-			// 		postedMessages.push(messageToProcess);
+					postedMessages.push(messageToProcess);
 
-			// 		cy.writeFile("cypress/fixtures/postedMessages.json", postedMessages);
-			// 	}
-			// );
+					cy.writeFile("cypress/fixtures/postedMessages.json", postedMessages);
+				}
+			);
 
-			// // Update 'tweetData'
-			// const updatedTweetData = tweetData.slice(1); // Remove the first item
+			// Update 'tweetData'
+			const updatedTweetData = tweetData.slice(1); // Remove the first item
 
-			// cy.writeFile("cypress/fixtures/tweetData.json", updatedTweetData);
+			cy.writeFile("cypress/fixtures/tweetData.json", updatedTweetData);
 		});
 	});
 });
