@@ -27,6 +27,13 @@ pipeline {
             }
         }
 
+        stage('Install Cypress') {
+            steps {
+                // Install the Cypress binary
+                sh 'npx cypress install'
+            }
+        }
+
         stage('Run Cypress Tests') {
             steps {
                 // Run Cypress tests and generate JUnit XML and mochawesome JSON reports
@@ -41,7 +48,7 @@ pipeline {
                 archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
                 // Optionally archive screenshots or videos if generated
                 archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
-                // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
+            // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
             }
         }
 
