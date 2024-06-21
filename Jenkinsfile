@@ -47,7 +47,7 @@ pipeline {
                 archiveArtifacts artifacts: 'cypress/results/junit/**/*.xml'
                // archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
                 // Optionally archive screenshots or videos if generated
-                archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
+                //archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
             // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
             }
         }
