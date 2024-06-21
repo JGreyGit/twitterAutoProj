@@ -9,6 +9,12 @@ pipeline {
     }
 
     stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from the repository
+                checkout scm
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 // Install Node.js and Cypress dependencies
@@ -18,14 +24,7 @@ pipeline {
                     echo "PATH: ${env.PATH}"
                     sh 'npm --version'
                     sh 'npm install'
-                // Optionally restore Cypress cache
-                // configured to restore cache from CYPRESS_CACHE_FOLDER
                 }
-            }
-        }
-        stage('Copy Cypress Config') {
-            steps {
-                sh 'cp /Users/jgrey/Nerd/CypressProjects/twitterProj/cypress.config.js ${WORKSPACE}/cypress.config.js'
             }
         }
 
@@ -38,27 +37,4 @@ pipeline {
 
         stage('Archive Artifacts') {
             steps {
-                // Archive Cypress reports and other artifacts
-                archiveArtifacts artifacts: 'cypress/results/junit/**/*.xml'
-                archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
-                // Optionally archive screenshots or videos if generated
-                archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
-            // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
-            }
-        }
-
-        stage('Record Test Results') {
-            steps {
-                // Record JUnit test results for Jenkins to display
-                junit 'cypress/results/junit/**/*.xml'
-            }
-        }
-    }
-
-    post {
-        always {
-            // Clean up steps if needed
-            deleteDir()
-        }
-    }
-}
+                // Archive Cypress reports and other artifac
