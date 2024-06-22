@@ -22,7 +22,11 @@ class homePage {
 	}
 
 	clickPostButton() {
-		return this.elements.postTweetButton().click();
+		return this.elements.postTweetButton().should("exist").focus().click();
+	}
+
+	actionPostButtonWithKeyBoard() {
+		return this.elements.postTweetButton().should("exist").focus().click();
 	}
 }
 export default homePage;

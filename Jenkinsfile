@@ -37,7 +37,7 @@ pipeline {
         stage('Run Cypress Tests') {
             steps {
                 // Run Cypress tests and generate JUnit XML and mochawesome JSON reports
-                sh 'npx cypress run --headed --browser chrome --spec "cypress/e2e/twitter/tweetMessage.cy.js" --reporter mocha-junit-reporter --reporter-options mochaFile=cypress/results/junit/results.xml,toConsole=true,reportDir=cypress/reports/mochawesome,overwrite=false,html=false,json=true --config-file cypress.config.js'
+                sh 'npx cypress run --headed --browser chrome --spec "cypress/e2e/twitter/tweetImageAndText.cy.js" --reporter mocha-junit-reporter --reporter-options mochaFile=cypress/results/junit/results.xml,toConsole=true,reportDir=cypress/reports/mochawesome,overwrite=false,html=false,json=true --config-file cypress.config.js'
             }
         }
 

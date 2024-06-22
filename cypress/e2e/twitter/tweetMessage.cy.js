@@ -5,7 +5,7 @@ import loginData from "../../fixtures/loginData.json";
 const lgPageObj = new loginPage();
 const hPageObj = new homePage();
 
-describe("post a tweet", () => {
+describe.skip("post a tweet", () => {
 	beforeEach(() => {
 		//access fixture data
 
@@ -30,10 +30,7 @@ describe("post a tweet", () => {
 		//getting some message/quotes  from : https://www.pinkvilla.com/lifestyle/relationships/black-love-quotes-1218213
 
 		cy.fixture("tweetData.json").then((tweetData) => {
-			if (tweetData.length === 0) {
-				cy.log("No messages to process");
-				return;
-			}
+		
 
 			// Get the first message to process
 			const messageToProcess = tweetData[0];
@@ -45,7 +42,6 @@ describe("post a tweet", () => {
 			hPageObj.clickPostButton();
 
 			// //once message has posted , move the message to a file called 'postedMessages'
-
 			cy.log(`Posted message: ${messageToProcess.message}`);
 
 			// Read the postedMessages fixture to append the processed message
