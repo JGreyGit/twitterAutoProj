@@ -5,7 +5,7 @@ import loginData from "../../fixtures/loginData.json";
 const lgPageObj = new loginPage();
 const hPageObj = new homePage();
 
-describe.skip("post a tweet", () => {
+describe("post a tweet", () => {
 	beforeEach(() => {
 		//access fixture data
 
@@ -40,6 +40,7 @@ describe.skip("post a tweet", () => {
 			//upload images
 
 			hPageObj.clickPostButton();
+			cy.wait(3000)
 
 			// //once message has posted , move the message to a file called 'postedMessages'
 			cy.log(`Posted message: ${messageToProcess.message}`);
