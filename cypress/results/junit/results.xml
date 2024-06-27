@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="16.410" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2024-06-25T18:19:52" tests="0" file="cypress/e2e/twitter/tweetMessage.cy.js" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="15.571" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-27T09:55:29" tests="0" file="cypress/e2e/twitter/tweetMessage.cy.js" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="post a tweet" timestamp="2024-06-25T18:19:52" tests="1" time="16.399" failures="0">
-    <testcase name="post a tweet Post in Twitter" time="15.391" classname="Post in Twitter">
+  <testsuite name="post a tweet" timestamp="2024-06-27T09:55:29" tests="1" time="15.566" failures="0">
+    <testcase name="post a tweet Post in Twitter" time="14.620" classname="Post in Twitter">
     </testcase>
   </testsuite>
 </testsuites>
