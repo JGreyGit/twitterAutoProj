@@ -38,9 +38,11 @@ describe("post a tweet", () => {
 			hPageObj.typeWhatIsHappeningTextField(messageToProcess.message);
 
 			//upload images
-
-			hPageObj.clickPostButton();
+			cy.get('body').type('{esc}');
 			cy.wait(3000)
+			hPageObj.clickPostButton();
+
+			cy.wait(5000)
 
 			// //once message has posted , move the message to a file called 'postedMessages'
 			cy.log(`Posted message: ${messageToProcess.message}`);
