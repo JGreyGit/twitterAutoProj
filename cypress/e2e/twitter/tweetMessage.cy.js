@@ -30,19 +30,17 @@ describe("post a tweet", () => {
 		//getting some message/quotes  from : https://www.pinkvilla.com/lifestyle/relationships/black-love-quotes-1218213
 
 		cy.fixture("tweetData.json").then((tweetData) => {
-		
-
 			// Get the first message to process
 			const messageToProcess = tweetData[0];
 
 			hPageObj.typeWhatIsHappeningTextField(messageToProcess.message);
-
+			cy.wait(3000);
 			//upload images
-			cy.get('body').type('{esc}');
-			cy.wait(3000)
+			cy.get("body").type("{esc}");
+			cy.wait(3000);
 			hPageObj.clickPostButton();
 
-			cy.wait(5000)
+			cy.wait(5000);
 
 			// //once message has posted , move the message to a file called 'postedMessages'
 			cy.log(`Posted message: ${messageToProcess.message}`);
