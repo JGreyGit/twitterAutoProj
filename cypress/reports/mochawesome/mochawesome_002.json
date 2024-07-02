@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-02T21:55:13.494Z",
+    "end": "2024-07-02T21:55:19.417Z",
+    "duration": 5923,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2519ef8e-f96f-4ede-8a13-8167579e4df5",
+      "title": "",
+      "fullFile": "cypress/e2e/twitter/tweetMessage.cy.js",
+      "file": "cypress/e2e/twitter/tweetMessage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ffcaa38-fceb-436b-afc5-1cb23a963102",
+          "title": "post a tweet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post in Twitter",
+              "fullTitle": "post a tweet Post in Twitter",
+              "timedOut": null,
+              "duration": 4921,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"eq\", \"https://x.com/home\");\ncy.log(\"Starting Posting Process\");\n//getting some message/quotes  from : https://www.pinkvilla.com/lifestyle/relationships/black-love-quotes-1218213\ncy.fixture(\"tweetData.json\").then(tweetData => {\n  // Get the first message to process\n  const messageToProcess = tweetData[0];\n  hPageObj.typeWhatIsHappeningTextField(messageToProcess.message);\n  //upload images\n  cy.get('body').type('{esc}');\n  cy.wait(3000);\n  hPageObj.clickPostButton();\n  cy.wait(5000);\n  // //once message has posted , move the message to a file called 'postedMessages'\n  cy.log(`Posted message: ${messageToProcess.message}`);\n  // Read the postedMessages fixture to append the processed message\n  cy.readFile(\"cypress/fixtures/postedMessages.json\").then(postedMessages => {\n    if (!Array.isArray(postedMessages)) {\n      postedMessages = [];\n    }\n    postedMessages.push(messageToProcess);\n    cy.writeFile(\"cypress/fixtures/postedMessages.json\", postedMessages);\n  });\n  // Update 'tweetData'\n  const updatedTweetData = tweetData.slice(1); // Remove the first item\n  cy.writeFile(\"cypress/fixtures/tweetData.json\", updatedTweetData);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[autocomplete='username']`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `post a tweet`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[autocomplete='username']`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `post a tweet`\n    at Object.userNameObj (webpack://twitterproj/./cypress/e2e/pages/loginPage.js:3:24)\n    at loginPage.typeUserName (webpack://twitterproj/./cypress/e2e/pages/loginPage.js:12:17)\n    at Context.eval (webpack://twitterproj/./cypress/e2e/twitter/tweetMessage.cy.js:16:12)",
+                "diff": null
+              },
+              "uuid": "d20da5cf-690b-4d3c-9b15-5afa1dd1088a",
+              "parentUUID": "8ffcaa38-fceb-436b-afc5-1cb23a963102",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d20da5cf-690b-4d3c-9b15-5afa1dd1088a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4921,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "mochaFile": "cypress/results/junit/results-[hash].xml",
+        "toConsole": true,
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
