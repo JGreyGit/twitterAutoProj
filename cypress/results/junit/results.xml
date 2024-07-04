@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="21.696" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2024-07-02T21:55:41" tests="0" file="cypress/e2e/twitter/tweetMessage.cy.js" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="5.954" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-07-04T06:27:49" tests="0" file="cypress/e2e/twitter/tweetMessage.cy.js" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="post a tweet" timestamp="2024-07-02T21:55:41" tests="1" time="21.682" failures="0">
-    <testcase name="post a tweet Post in Twitter" time="20.686" classname="Post in Twitter">
+  <testsuite name="post a tweet" timestamp="2024-07-04T06:27:49" tests="1" time="5.947" failures="1">
+    <testcase name="post a tweet &quot;before each&quot; hook for &quot;Post in Twitter&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;Post in Twitter&quot;">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[autocomplete=&apos;username&apos;]`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `post a tweet`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[autocomplete='username']`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `post a tweet`
+    at Object.userNameObj (webpack://twitterproj/./cypress/e2e/pages/loginPage.js:3:24)
+    at loginPage.typeUserName (webpack://twitterproj/./cypress/e2e/pages/loginPage.js:12:17)
+    at Context.eval (webpack://twitterproj/./cypress/e2e/twitter/tweetMessage.cy.js:16:12)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

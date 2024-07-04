@@ -34,10 +34,10 @@ describe("post a tweet", () => {
 			const messageToProcess = tweetData[0];
 
 			hPageObj.typeWhatIsHappeningTextField(messageToProcess.message);
-			cy.wait(3000);
+			cy.wait(5000);
 			//upload images
 			cy.get("body").type("{esc}");
-			cy.wait(3000);
+			cy.wait(5000);
 			hPageObj.clickPostButton();
 
 			cy.wait(5000);
