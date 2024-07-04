@@ -8,18 +8,10 @@ pipeline {
     }
 
     stages {
-        stage('Checkout SCM') {
+        stage('Checkout') {
             steps {
-                script {
-                    retry(3) {
-                        checkout([$class: 'GitSCM',
-                            branches: [[name: '*/main']],
-                            doGenerateSubmoduleConfigurations: false,
-                            extensions: [[$class: 'CloneOption', depth: 1]],
-                            userRemoteConfigs: [[url: 'https://github.com/JGreyGit/twitterAutoProj.git']]
-                        ])
-                    }
-                }
+                // Checkout the code from the repository
+                checkout scm
             }
         }
 
@@ -53,10 +45,10 @@ pipeline {
             steps {
                 // Archive Cypress reports and other artifacts
                 archiveArtifacts artifacts: 'cypress/results/junit/**/*.xml'
-            // archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
-            // Optionally archive screenshots or videos if generated
-            //archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
-            // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
+                // archiveArtifacts artifacts: 'cypress/reports/mochawesome/*.json'
+                // Optionally archive screenshots or videos if generated
+                // archiveArtifacts artifacts: 'cypress/screenshots/**/*.png'
+                // archiveArtifacts artifacts: 'cypress/videos/**/*.mp4'
             }
         }
 
